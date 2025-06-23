@@ -21,6 +21,23 @@ def add(a: int, b: int) -> int:
 
 
 @mcp.tool()
+def subtract(a: int, b: int) -> int:
+    """Subtract the second integer from the first and return the result.
+
+    Args:
+        a: First integer (minuend)
+        b: Second integer (subtrahend)
+
+    Returns:
+        Difference of a and b
+    """
+    result = a - b
+    print(f"Elementary Math: {a} - {b} = {result}")
+    return result
+
+
+
+@mcp.tool()
 def multiply(a: int, b: int) -> int:
     """Multiply two integers and return the result.
 
@@ -36,20 +53,6 @@ def multiply(a: int, b: int) -> int:
     return result
 
 
-@mcp.tool()
-def subtract(a: int, b: int) -> int:
-    """Subtract the second integer from the first and return the result.
-
-    Args:
-        a: First integer (minuend)
-        b: Second integer (subtrahend)
-
-    Returns:
-        Difference of a and b
-    """
-    result = a - b
-    print(f"Elementary Math: {a} - {b} = {result}")
-    return result
 
 
 @mcp.tool()
